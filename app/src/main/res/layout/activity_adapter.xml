@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="20dp"
+    android:layout_width="390dp"
+    android:layout_height="140dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtOrden"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:text="Orden"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtFecha"
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:text="Fecha" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/ImgGuardada"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0"
+                    tools:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/txtDescripcion"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="Descripción"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPeriodista"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:text="TextView"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#E53935"
+                    app:srcCompat="@drawable/car_ui_icon_delete" />
+
+                <ImageView
+                    android:id="@+id/btnActualizar"
+                    android:layout_width="42dp"
+                    android:layout_height="48dp"
+                    android:background="#039BE5"
+                    app:srcCompat="@drawable/edit" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
