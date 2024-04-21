@@ -47,8 +47,8 @@ public class Adapter extends FirestoreRecyclerAdapter<Entrevista, Adapter.ViewHo
     protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull Entrevista model) {
         DocumentSnapshot documentSnapshot = getSnapshots().getSnapshot(holder.getAdapterPosition());
         final String id = documentSnapshot.getId();
-        holder.orden.setText(model.getOrden());
-        holder.descripcion.setText(model.getDesrip());
+        holder.orden.setText(model.getIdOrden());
+        holder.descripcion.setText(model.getDescripcion());
         holder.periodista.setText(model.getPeriodista());
         holder.fecha.setText(model.getFecha());
         String nFoto = model.getFotoURL();
